@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-
-<head>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <title>GFG App</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="weather-card">
-            <h1 style="color: green;">
-                GeeksforGeeks
-            </h1>
-            <h3>
-                Weather App
-            </h3>
-            <input type="text" id="city-input"
-                placeholder="Enter city name">
-            <button id="city-input-btn"
-                    onclick="weatherFn($('#city-input').val())">
-                    Get Weather
-            </button>
-            <div id="weather-info"
-                class="animate__animated animate__fadeIn">
-                <h3 id="city-name"></h3>
-                <p id="date"></p>
-                <img id="weather-icon" src="" alt="Weather Icon">
-                <p id="temperature"></p>
-                <p id="description"></p>
-                <p id="wind-speed"></p>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Weather App</title>
+  </head>
+  <body
+    class="m-0 font-montserrat flex justify-center items-center h-screen bg-gradient-to-r from-green-500 to-blue-500"
+  >
+    <div class="text-center">
+      <div
+        class="bg-white bg-opacity-95 rounded-3xl p-8 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 w-[450px]"
+      >
+        <h1 class="text-green-500 text-3xl font-bold mb-2">GeeksforGeeks</h1>
+        <h3 class="text-xl mb-4">Weather App</h3>
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name"
+          class="p-4 mb-4 w-4/5 border border-gray-300 rounded-md text-base focus:outline-none focus:border-blue-500 placeholder-gray-400"
+        />
+        <button
+          id="city-input-btn"
+          onclick="weatherFn($('#city-input').val())"
+          class="p-3 bg-blue-500 text-white border-none rounded-md text-base cursor-pointer hover:bg-blue-700"
+        >
+          Get Weather
+        </button>
+        <div id="weather-info" class="hidden animate__animated animate__fadeIn">
+          <h3 id="city-name" class="text-xl mt-4"></h3>
+          <p id="date" class="text-sm text-red-500"></p>
+          <img
+            id="weather-icon"
+            src=""
+            alt="Weather Icon"
+            class="w-24 h-24 mx-auto my-2"
+          />
+          <p id="temperature" class="text-2xl font-bold my-2"></p>
+          <p id="description" class="text-lg mb-2"></p>
+          <p id="wind-speed" class="text-base text-red-500"></p>
         </div>
+      </div>
     </div>
-    <script src=
-"https://code.jquery.com/jquery-3.6.0.min.js">
-    </script>
-    <script src=
-"https://momentjs.com/downloads/moment.min.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
     <script src="script2.js"></script>
-</body>
-
+  </body>
 </html>
