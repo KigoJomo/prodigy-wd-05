@@ -26,13 +26,13 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/KigoJomo/weather-web-app.git
+   git clone https://github.com/KigoJomo/prodigy-wd-05.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd weather-web-app
+   cd prodigy-wd-05
    ```
 
 3. **Set up your API key:**
